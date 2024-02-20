@@ -13,3 +13,7 @@ export const taskReducer = (state, action) => {
           throw new Error(`Unhandled action type: ${action.type}`);
   }
 };
+
+
+// Reference
+// https://devtrium.com/posts/how-to-use-react-usereducer-hook
