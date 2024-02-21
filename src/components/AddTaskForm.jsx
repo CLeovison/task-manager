@@ -8,6 +8,7 @@ export const AddTaskForm = () => {
   const [editId, setEditId] = useState(null);
   const [editText, setEditText] = useState("");
   const [filter, setFilter] = useState("All");
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch({ type: "ADD_TASK", payload: title });
