@@ -77,20 +77,13 @@ export const AddTaskForm = () => {
                 />
 
                 {editId !== title.id && (
-                  <label
-                    htmlFor={title.id}
-                    className={title.completed ? styles.completed : ""}
-                  >
+                  <label htmlFor={title.id} className={title.completed ? styles.completed : ""}>
                     {title.title}
                   </label>
                 )}
                 {editId === title.id && (
                   <>
-                    <input
-                      type="text"
-                      onChange={(e) => setEditText(e.target.value)}
-                      defaultValue={title.title}
-                    />
+                    <input type="text" onChange={(e) => setEditText(e.target.value)} defaultValue={title.title}/>
                     <button onClick={(e) => handleSave(title.id)}> Save</button>
                   </>
                 )}
